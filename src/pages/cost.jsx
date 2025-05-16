@@ -25,7 +25,7 @@ export default function CostEstimator() {
   const handleSubmit = async () => {
     setLoading(true); setError(""); setEstimated(null);
     try {
-      const res = await fetch("/api/cost", {
+      const res = await fetch("https://safarcraft-backend.onrender.com/api/cost", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
