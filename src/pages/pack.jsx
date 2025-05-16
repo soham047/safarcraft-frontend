@@ -30,7 +30,7 @@ export default function PackingList() {
     };
 
     try {
-      const res = await fetch("/api/packing", {
+      const res = await fetch("https://safarcraft-backend.onrender.com/api/packing", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
