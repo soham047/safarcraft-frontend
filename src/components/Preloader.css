@@ -1,0 +1,40 @@
+/* Preloader.css */
+.preloader-container {
+    position: fixed;
+    inset: 0;
+    background: #0e0e0e;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .balls-loader {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .ball {
+    width: 16px;
+    height: 16px;
+    background: #38bdf8;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite ease-in-out;
+  }
+  
+  .ball2 {
+    animation-delay: 0.2s;
+  }
+  .ball3 {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0.8);
+    }
+    40% {
+      transform: scale(1.4);
+    }
+  }
+  
