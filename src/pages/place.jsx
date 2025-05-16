@@ -45,7 +45,7 @@ export default function SimilarPlaces() {
   const handleBasicSubmit = async () => {
     setLoading(true); setError(""); setResults([]);
     try {
-      const res = await fetch("/api/similar", {
+      const res = await fetch("https://safarcraft-backend.onrender.com/api/similar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ place: basicForm.place }),
@@ -61,7 +61,7 @@ export default function SimilarPlaces() {
   const handleHybridSubmit = async () => {
     setLoading(true); setError(""); setResults([]);
     try {
-      const res = await fetch("/api/hybrid", {
+      const res = await fetch("https://safarcraft-backend.onrender.com/api/hybrid", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
