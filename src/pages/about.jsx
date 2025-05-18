@@ -243,7 +243,7 @@ export default function About() {
         </h2>
         <div className="bg-[#1c1c2e] p-8 rounded-lg border border-amber-500/20 text-left" data-aos="zoom-in">
           <p className="text-gray-400 mb-6">
-            Hi, I'm Soham Dutta, a pre-final year Computer Science student passionate about AI and its applications in solving real-world problems. सफर craft represents my journey of combining academic knowledge with cultural heritage.
+            Hi, I'm <span className="text-amber-400 font-semibold">Soham Dutta</span>, a pre-final year Computer Science student passionate about AI and its applications in solving real-world problems. सफर craft represents my journey of combining academic knowledge with cultural heritage.
           </p>
           <p className="text-gray-400 mb-6">
             This project was born during my exploration of India's diverse landscapes. I realized traditional travel planning often misses the nuances that make Indian travel unique - the regional variations, the unspoken customs, the seasonal transformations. सफर craft is my attempt to bridge that gap using technology.
