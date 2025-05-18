@@ -22,3 +22,77 @@ body {
 .features{
   background-color: rgba(240, 248, 255, 0.136);
 }
+
+/* Tech Stack Styling */
+.tech-pill {
+  @apply bg-gradient-to-br from-amber-900/20 to-orange-900/20 text-amber-200 text-sm px-4 py-2 rounded-lg border border-amber-500/30 text-center flex items-center justify-center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(251, 191, 36, 0.05);
+  backdrop-filter: blur(4px);
+  min-height: 40px;
+}
+
+.tech-pill:hover {
+  @apply bg-gradient-to-br from-amber-800/40 to-orange-800/40 border-amber-400/50 text-amber-100;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.15);
+}
+
+.tech-icon {
+  @apply mr-2 text-base;
+  transition: all 0.3s ease;
+}
+
+.tech-pill:hover .tech-icon {
+  transform: scale(1.2);
+  @apply text-amber-300;
+}
+
+/* Section container */
+.tech-stack-container {
+  @apply bg-gradient-to-br from-[#1c1c2e]/90 to-[#25253a]/90;
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* Category headers */
+.tech-category-header {
+  @apply text-lg font-semibold mb-4 text-amber-300;
+  position: relative;
+  padding-left: 24px;
+}
+
+.tech-category-header::before {
+  content: '';
+  @apply absolute left-0 top-1/2 w-3 h-3 bg-amber-400 rounded-full;
+  transform: translateY(-50%);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+/* Grid layout */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Special glow effect for important tech */
+.tech-pill.highlight {
+  @apply border-orange-400/50;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 8px rgba(245, 158, 11, 0.3); }
+  50% { box-shadow: 0 0 16px rgba(245, 158, 11, 0.5); }
+  100% { box-shadow: 0 0 8px rgba(245, 158, 11, 0.3); }
+}
