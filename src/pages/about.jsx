@@ -123,43 +123,76 @@ export default function About() {
       {/* Tech Stack */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-400">
-          Our Technology Stack
+          Our Powerful Technology Stack
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
+          {/* AI/ML Core */}
           <div className="bg-[#1c1c2e] p-6 rounded-lg border border-amber-500/20" data-aos="fade-up">
-            <h3 className="text-xl font-semibold mb-3 text-amber-400">Frontend</h3>
-            <ul className="text-gray-400 text-sm space-y-2">
-              <li>React.js with Vite for blazing fast performance</li>
-              <li>Tailwind CSS for responsive, beautiful UI</li>
-              <li>Framer Motion for subtle animations</li>
-              <li>AOS for scroll-triggered effects</li>
-              <li>React Router for seamless navigation</li>
-            </ul>
+            <h3 className="text-xl font-semibold mb-3 text-amber-400">AI/ML Foundation</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="tech-pill">GROQ LLM</div>
+              <div className="tech-pill">LangChain</div>
+              <div className="tech-pill">RAG</div>
+              <div className="tech-pill">NLP</div>
+              <div className="tech-pill">Scikit-learn</div>
+              <div className="tech-pill">TensorFlow</div>
+              <div className="tech-pill">PyTorch</div>
+              <div className="tech-pill">Transformers</div>
+              <div className="tech-pill">Cosine Similarity</div>
+              <div className="tech-pill">Sentence-BERT</div>
+              <div className="tech-pill">NLTK</div>
+            </div>
           </div>
           
+          {/* Development Stack */}
           <div className="bg-[#1c1c2e] p-6 rounded-lg border border-amber-500/20" data-aos="fade-up" data-aos-delay="100">
-            <h3 className="text-xl font-semibold mb-3 text-amber-400">Backend & AI</h3>
-            <ul className="text-gray-400 text-sm space-y-2">
-              <li>Flask RESTful API serving our ML models</li>
-              <li>Python for data processing and model training</li>
-              <li>Scikit-learn for traditional ML algorithms</li>
-              <li>GROQ with LangChain for itinerary generation</li>
-              <li>Sentence Transformers for similarity calculations</li>
-              <li>Pandas/Numpy for data manipulation</li>
-            </ul>
+            <h3 className="text-xl font-semibold mb-3 text-amber-400">Development Stack</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="tech-pill">React.js</div>
+              <div className="tech-pill">Vite</div>
+              <div className="tech-pill">Tailwind CSS</div>
+              <div className="tech-pill">Framer Motion</div>
+              <div className="tech-pill">Flask</div>
+              <div className="tech-pill">FastAPI</div>
+              <div className="tech-pill">Python</div>
+              <div className="tech-pill">JavaScript</div>
+              <div className="tech-pill">HTML5</div>
+              <div className="tech-pill">CSS3</div>
+              <div className="tech-pill">AOS</div>
+            </div>
           </div>
           
+          {/* Data & Infrastructure */}
           <div className="bg-[#1c1c2e] p-6 rounded-lg border border-amber-500/20" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="text-xl font-semibold mb-3 text-amber-400">Data & Deployment</h3>
-            <ul className="text-gray-400 text-sm space-y-2">
-              <li>Custom dataset of 100+ Indian destinations</li>
-              <li>Pexels API for destination images</li>
-              <li>OpenWeatherMap API for climate data</li>
-              <li>Railway/transport APIs for scheduling</li>
-              <li>Dockerized for easy deployment</li>
-              <li>Render/Vercel for cloud hosting</li>
-            </ul>
+            <h3 className="text-xl font-semibold mb-3 text-amber-400">Data & Infrastructure</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="tech-pill">Pandas</div>
+              <div className="tech-pill">NumPy</div>
+              <div className="tech-pill">Pexels API</div>
+              <div className="tech-pill">Vercel</div>
+              <div className="tech-pill">Render</div>
+              <div className="tech-pill">GitHub</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Specialized Techniques */}
+        <div className="mt-8 bg-[#1c1c2e] p-6 rounded-lg border border-amber-500/20" data-aos="fade-up">
+          <h3 className="text-xl font-semibold mb-3 text-amber-400">Specialized Techniques</h3>
+          <div className="flex flex-wrap gap-2">
+            <div className="tech-pill">Random Forest</div>
+            <div className="tech-pill">XGBoost</div>
+            <div className="tech-pill">Feature Engineering</div>
+            <div className="tech-pill">Hyperparameter Tuning</div>
+            <div className="tech-pill">Prompt Engineering</div>
+            <div className="tech-pill">Vector Embeddings</div>
+            <div className="tech-pill">Semantic Search</div>
+            <div className="tech-pill">Knowledge Graphs</div>
+            <div className="tech-pill">Transfer Learning</div>
+            <div className="tech-pill">Data Augmentation</div>
+            <div className="tech-pill">CI/CD Pipelines</div>
+            <div className="tech-pill">Microservices</div>
           </div>
         </div>
       </section>
